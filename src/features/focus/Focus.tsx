@@ -1,11 +1,10 @@
 import React, { useState } from "react";
 import { Text, StyleSheet, View } from "react-native";
-import { Focus } from "./src/features/focus/focus";
-export default function App() {
-  const [focusSubject, setFocusSubject] = useState<string | undefined>();
+
+export function Focus() {
   return (
     <View style={styles.container}>
-      {focusSubject ? <Text>I have a subject</Text> : <Focus />}
+      <Text>What would you like to focus on ?</Text>
     </View>
   );
 }
